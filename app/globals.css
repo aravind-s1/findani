@@ -65,7 +65,7 @@ main{
   color: black;
 }
 .herotext h1{
-  font-size: 150px;
+  font-size: 100px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
