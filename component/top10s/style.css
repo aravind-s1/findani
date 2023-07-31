@@ -1,0 +1,37 @@
+.top10{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.top10tab{
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    min-width: 350px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.tab{
+    display:flex;
+    flex-direction: row;
+    justify-content: 'space-between';
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.tab img{
+    border: 2px solid black;
+    margin: 5px;
+}
+.tab:hover{
+    background-color: #ff2929;
+    scale: 101%;
+}
+@media screen and (max-width:376px) {
+    .top10{
+        flex-direction: column;
+    }
+    
+}
