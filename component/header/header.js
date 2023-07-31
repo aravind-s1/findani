@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation'
 import './header.css'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 export default function Header(){
     const router = useRouter()
@@ -18,7 +19,7 @@ export default function Header(){
     return(
         <div className='navbar'>
             <div className="header">
-                <div className="logo"><h1>FINDANI</h1></div>
+                <div className="logo"><Link href='/'><h1>FINDANI</h1></Link></div>
                 <div className='menu'><button onClick={click}>
                 {
                 play?

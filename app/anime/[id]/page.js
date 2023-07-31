@@ -48,7 +48,7 @@ export default function Page({ params }) {
         start==true?
         <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>:
         <>
-        <div>
+        <div className='a'>
           <div className='maincard'>
             <div className='left'>
             <img 
@@ -83,10 +83,10 @@ export default function Page({ params }) {
             </div>
           </div>
           <div className='bottom'>
-            <div style={{display:'flex',justifyContent:'space-evenly'}}>
+            <div  className='d'>
               <button className='opts' onClick={changeChar} id={boolChar?'active':''}><h2>Characters</h2></button>
               <button className='opts' onClick={changeStre} id={boolStre?'active':''}><h2>Stream Links</h2></button>
-              <button className='opts' onClick={changeExtr} id={boolExtr?'active':''}><h2>Stream Links</h2></button>
+              <button className='opts' onClick={changeExtr} id={boolExtr?'active':''}><h2>External Links</h2></button>
             </div>
             <div className='charcards' id={boolChar?'':'inactive'}>
             {

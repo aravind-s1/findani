@@ -1,6 +1,11 @@
 .maincard{
     display: flex;
     justify-content: space-around;
+    width: 100vw;
+}
+.d{
+  display: flex;
+  justify-content: center;
 }
 p{
     font-weight: 700;
@@ -104,7 +109,7 @@ p{
 }
 .opts:hover{
     scale: 105%;
-    background: #2fff2f;
+    background: #ff0000;
 }
 .opts{
     height: 80px;
@@ -197,6 +202,7 @@ p{
       transform: scale(1.5);
     }
   }
+
 @media screen and (max-width:415px){
     .maincard{
         flex-direction: column;
@@ -221,5 +227,19 @@ p{
     }   
     .di{
         display: flex;
+    }
+    .bottom{
+      flex-direction: column
+    }
+    .d{
+      display:flex;
+      justify-content:space-evenly;
+      flex-direction: column;
+      align-items: center;
+    }
+    .a{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 }
